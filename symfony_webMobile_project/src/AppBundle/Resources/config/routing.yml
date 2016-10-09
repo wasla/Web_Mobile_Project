@@ -1,0 +1,8 @@
+
+all:
+    path:     /all
+    defaults: { _controller: AppBundle:Klant:all }
+
+find_by_id:
+    path:     /findById
+    defaults: { _controller: AppBundle:Klant:findById }

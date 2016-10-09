@@ -1,0 +1,82 @@
+<?php
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+/**
+ * Created by PhpStorm.
+ * User: nida ilyas
+ * Date: 07/10/2016
+ * Time: 15:18
+ */
+
+/**
+ * Klant
+ *
+ * @ORM\Table(name="klanten")
+ * @ORM\Entity
+ */
+class Klant
+{
+
+
+    /**
+     * @ORM\Column(name="klant_Id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $klant_Id;
+
+
+
+
+
+
+    /**
+     * @ORM\Column(name="naam", type="string")
+     */
+    private $naam;
+
+
+
+
+
+
+
+    /**
+     * @ORM\Column(name="habit_1", type="string")
+     */
+    private $habit_1;
+
+
+
+
+    /**
+     * @ORM\Column(name="habit_2", type="string")
+     */
+    private $habit_2;
+
+
+    /**
+     * @ORM\Column(name="habit_3", type="string")
+     */
+    private $habit_3;
+
+
+
+
+
+    function __toString()
+    {
+        return $this -> naam. ", ".
+        $this -> habit_1. ", ".
+        $this -> habit_2. ", ".
+        $this -> habit_3;
+    }
+
+
+
+
+    
+
+
+}

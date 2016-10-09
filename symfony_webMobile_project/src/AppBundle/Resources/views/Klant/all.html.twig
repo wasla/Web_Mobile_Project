@@ -1,0 +1,17 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:Klant:all{% endblock %}
+
+
+
+{% block body %}
+    <h1>find all </h1>
+    {% if klanten %}
+        <ul>{% for k in klanten %}
+                <li>{{k|e}}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        Er staan geen klanten in de db.
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,74 @@
+<?php
+
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Created by PhpStorm.
+ * User: nida ilyas
+ * Date: 07/10/2016
+ * Time: 15:18
+ */
+
+
+/**
+ * HabitProgress
+ *
+ * @ORM\Table(name="habitsprogress")
+ * @ORM\Entity
+ */
+class HabitProgress
+{
+
+    /**
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+
+    /**
+     * @ORM\Column(name="date", type="datetime")
+     */
+    private $date;
+
+
+
+
+    /**
+     * @ORM\Column(name="progressHabit1", type="integer")
+     */
+    private $progressHabit1;
+
+
+
+
+    /**
+     * @ORM\Column(name="progressHabit2", type="integer")
+     */
+    private $progressHabit2;
+
+
+
+
+
+    /**
+     * @ORM\Column(name="progressHabit3", type="integer")
+     */
+    private $progressHabit3;
+
+
+    /**
+     * @ORM\Column(name="weight", type="double")
+     */
+    private $weight;
+
+
+    /**
+     * @ORM\Column(name="calories", type="double")
+     */
+    private  $calories;
+}
